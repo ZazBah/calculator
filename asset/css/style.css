@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #D0D3D4;
+}
+/*HEAD-S*/
+
+/*HEAD-E*/
+/*BODY-S*/
+.div{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+    box-shadow: -5px -4px 5px rgba(130, 130, 130, 0.150), 3px 5px 7px rgba(0, 0, 0, .250);
+    border-radius: 10px;
+}
+.div2{
+    height: 530px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.showbox{
+    text-align: right;
+    font-size: 30px;
+    color: black;
+    font-family: 'Varela Round', sans-serif;
+    padding-right: 20px;
+    width: 100%;
+    height: 80px;
+    padding-top: 15px;
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: inset -2px -3px 3px rgba(130, 130, 130, 0.150), inset 3px 4px 5px rgba(0, 0, 0, .250);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: default;
+}
+.showbox1{
+    text-align: right;
+    font-size: 20px;
+    color: black;
+    font-family: 'Varela Round', sans-serif;
+    padding-right: 20px;
+    width: 100%;
+    height: 60px;
+    padding-top: 15px;
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: inset -2px -3px 3px rgba(130, 130, 130, 0.150), inset 3px 4px 5px rgba(0, 0, 0, .250);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: default;
+}
+.row-margin{
+    margin-top: 20px;
+}
+.btn{
+    width: 100%;
+    font-size: 25px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    color: black;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: -2px -3px 3px rgba(130, 130, 130, 0.150), 3px 4px 5px rgba(0, 0, 0, .250);
+    transition: 0.3s;
+}
+.btn:hover{
+    box-shadow: inset -2px -3px 3px rgba(130, 130, 130, 0.150), inset 3px 4px 5px rgba(0, 0, 0, .250);
+}
+.icon{
+    font-size: 20px;
+}
+
+/*BODY-E*/
+/*FOOTER-S*/
+
+/*FOOTER-E*/
+
+@media only screen and (min-width: 320px){
+
+
+}
+
+@media only screen and (min-width: 360px){
+
+
+}
+
+@media only screen and (min-width: 375px){
+
+
+}
+
+@media only screen and (min-width: 411px){
+
+
+}
+
+@media only screen and (min-width: 414px){
+
+
+}
+
+@media only screen and (min-width: 540px){
+
+
+}
+
+@media only screen and (min-width: 768px){
+
+
+}
+
+@media only screen and (min-width: 1024px){
+
+
+}
+
+@media only screen and (min-width: 1025px){
+    
+
+}

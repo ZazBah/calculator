@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!--Bootstrap_CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--Google_fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+    <!--My_CSS-->
+    <link rel="stylesheet" href="asset/css/style.css">
+
+</head>
+<body>
+    <!--head-start-->
+        
+    <!--head-end-->
+
+    <!--body-start-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3 offset-3 div">
+                    <h1 id="output" class="showbox" value="0"></h1>
+                    <h1 id="output1" class="showbox1" value="0"> click on check </h1>
+                    <div class="row row-margin">
+                        <div class="col-3  margin-btn-col">
+                            <button class="btn number" value="1" onclick="handleNumber(1)">1</button>
+                        </div>
+                        <div class="col-3  margin-btn-col">
+                            <button class="btn number" value="1" onclick="handleNumber(2)">2</button>
+                        </div>
+                        <div class="col-3  margin-btn-col">
+                            <button class="btn number" value="1" onclick="handleNumber(3)">3</button>
+                        </div>
+                        <div class="col-3  margin-btn-col">
+                            <button class="btn oparator" onclick="handleNumber('+')" >+</button>
+                        </div>     
+                    </div>
+                    <div class="row row-margin">
+                       <div class="col-3">
+                           <button id="number" class="btn" value="4" onclick="handleNumber(4)">4</button>
+                       </div>
+                       <div class="col-3">
+                           <button id="number" class="btn" value="5" onclick="handleNumber(5)">5</button>
+                       </div>
+                       <div class="col-3">
+                           <button id="number" class="btn" value="6" onclick="handleNumber(6)">6</button>
+                       </div>
+                       <div class="col-3">
+                           <button class="btn red-bg" onclick="handleNumber('-')">-</button>
+                       </div>    
+                    </div>
+                    <div class="row row-margin">
+                       <div class="col-3">
+                           <button id="number" class="btn" onclick="handleNumber(7)">7</button>
+                       </div>
+                       <div class="col-3">
+                           <button id="number" class="btn" onclick="handleNumber(8)">8</button>
+                       </div>
+                       <div class="col-3">
+                           <button id="number" class="btn" onclick="handleNumber(9)">9</button>
+                       </div>
+                       <div class="col-3">
+                           <button class="btn red-bg" onclick="handleNumber('*')">x</button>
+                       </div>     
+                    </div>
+                    <div class="row row-margin">
+                        <div class="col-3">
+                            <button class="btn" onclick="handleBackspace()"><i class="fas fa-backspace icon"></i></button>
+                        </div>
+                       <div class="col-3">
+                            <button class="btn" onclick="handleNumber(0)">0</button>
+                       </div>
+                       <div class="col-3">
+                            <button class="btn" onclick="handleNumber('.')">.</button>
+                       </div>
+                       <div class="col-3">
+                           <button class="btn red-bg" onclick="handleNumber('/')">/</button>
+                       </div>     
+                    </div>
+                    <div class="row row-margin">
+                        <div class="col-6">
+                            <button class="btn" onclick="handleClear()">Clear</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn" onclick="handleResult()">=</button>
+                        </div>     
+                     </div>
+               </div>
+               <div id="div2" class="col-2 div2">
+                    <div class="row row-margin">
+                        <div class="col-12">
+                            <button class="btn red-bg" onclick="handleMore()">More</button>
+                        </div>     
+                    </div>
+                    <div class="row row-margin">
+                        <div class="col-12">
+                            <button class="btn red-bg" onclick="handleBinary()">Binary</button>
+                        </div>     
+                    </div>
+                    <div class="row row-margin">
+                        <div class="col-12">
+                            <button class="btn red-bg" onclick="handleOctal()">Octal</button>
+                        </div>     
+                    </div>
+                    <div class="row row-margin">
+                        <div class="col-12">
+                            <button class="btn red-bg" onclick="handleFactorial()">Factorial</button>
+                        </div>     
+                    </div>
+                    <div class="row row-margin">
+                        <div class="col-12">
+                            <button class="btn red-bg" onclick="handlePersent()">Percentage</button>
+                        </div>     
+                    </div>
+                    <div class="row row-margin">
+                        <div class="col-12">
+                            <button class="btn red-bg" onclick="handleCheck()">Check</button>
+                        </div>     
+                    </div>
+                    <div class="row row-margin">
+                        <div class="col-12">
+                            <button class="btn red-bg" onclick="handleLess()">Less</button>
+                        </div>     
+                    </div>
+               </div>
+            </div>           
+        </div>
+    <!--body-end-->
+    
+    <!--footer-start-->
+        
+    <!--footer-end-->
+
+
+    <!--Bootstrap_JS-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!--Fontawsome-->
+    <script src="https://kit.fontawesome.com/e6c688e1c2.js" crossorigin="anonymous"></script>
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
+    <!--My_JavaScript-->
+    <script src="asset/js/javascript.js"></script>
+</body>
+</html>
