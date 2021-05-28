@@ -11,7 +11,7 @@ body{
 /*BODY-S*/
 .div{
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 30px;
@@ -19,18 +19,18 @@ body{
     border-radius: 10px;
 }
 .div2{
-    height: 530px;
+    display: none;
     overflow: hidden;
     margin-top: 30px;
 }
 .showbox{
     text-align: right;
-    font-size: 30px;
+    font-size: 20px;
     color: black;
     font-family: 'Varela Round', sans-serif;
     padding-right: 20px;
     width: 100%;
-    height: 80px;
+    height: 50px;
     padding-top: 15px;
     background: transparent;
     border: none;
@@ -41,14 +41,15 @@ body{
     cursor: default;
 }
 .showbox1{
+    display: none;
     text-align: right;
-    font-size: 20px;
+    font-size: 15px;
     color: black;
     font-family: 'Varela Round', sans-serif;
-    padding-right: 20px;
+    padding-right: 10px;
     width: 100%;
-    height: 60px;
-    padding-top: 15px;
+    height: 40px;
+    padding-top: 10px;
     background: transparent;
     border: none;
     outline: none;
@@ -58,7 +59,13 @@ body{
     cursor: default;
 }
 .row-margin{
-    margin-top: 20px;
+    margin-top: 3px;
+}
+.row-margin2{
+    margin-top: 20px !important;
+}
+.margin-btn-col{
+    padding: 3px !important;
 }
 .btn{
     width: 100%;
@@ -124,6 +131,12 @@ body{
 }
 
 @media only screen and (min-width: 1025px){
-    
+    .div2{
+        margin-top: 150px;
+    }
+    .showbox{
+        height: 80px;
+        font-size: 40px;
+    }
 
 }
